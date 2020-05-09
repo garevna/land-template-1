@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "46bf368a75a9299bd93d",
-    "url": "/dgtek-land-1/css/app.d0d8f08c.css"
+    "revision": "e301f8258e0c7fa788d0",
+    "url": "/dgtek-land-1/css/app.54799350.css"
   },
   {
     "revision": "57b024c2808f28a7e7a7",
@@ -92,12 +92,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dgtek-land-1/img/speed.c9a0c7cf.svg"
   },
   {
-    "revision": "aa438beb35cb8ff7107de1b770a53d44",
+    "revision": "4fdf9b49d66f75293cc012e39c613f17",
     "url": "/dgtek-land-1/index.html"
   },
   {
-    "revision": "46bf368a75a9299bd93d",
-    "url": "/dgtek-land-1/js/app.f0deed23.js"
+    "revision": "e301f8258e0c7fa788d0",
+    "url": "/dgtek-land-1/js/app.6458fb2d.js"
   },
   {
     "revision": "57b024c2808f28a7e7a7",
