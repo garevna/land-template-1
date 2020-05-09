@@ -1,5 +1,9 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
+    "revision": "abaaaace38381bf9e6de8ab64292a3e7",
+    "url": "/dgtek-land-1/browserconfig.xml"
+  },
+  {
     "revision": "e301f8258e0c7fa788d0",
     "url": "/dgtek-land-1/css/app.54799350.css"
   },
@@ -92,7 +96,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dgtek-land-1/img/speed.c9a0c7cf.svg"
   },
   {
-    "revision": "4fdf9b49d66f75293cc012e39c613f17",
+    "revision": "8d2b8ff13ab03191e69bac44138d4acc",
     "url": "/dgtek-land-1/index.html"
   },
   {
@@ -104,8 +108,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dgtek-land-1/js/chunk-vendors.f9e5678f.js"
   },
   {
-    "revision": "b9d9ace5c80e085c0a5f78e6e86c84d2",
+    "revision": "987663d6d62c7cac418fbaedf6555291",
     "url": "/dgtek-land-1/manifest.json"
+  },
+  {
+    "revision": "912d7b3836eeea0c1b59f7f724cc3270",
+    "url": "/dgtek-land-1/mstile-150x150.png"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
