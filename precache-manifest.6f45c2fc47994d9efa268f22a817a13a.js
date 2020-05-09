@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dgtek-land-1/browserconfig.xml"
   },
   {
-    "revision": "e301f8258e0c7fa788d0",
-    "url": "/dgtek-land-1/css/app.54799350.css"
+    "revision": "8c25a7bc546821a02784",
+    "url": "/dgtek-land-1/css/app.f8fae8d8.css"
   },
   {
     "revision": "57b024c2808f28a7e7a7",
@@ -76,6 +76,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dgtek-land-1/fonts/materialdesignicons-webfont.f5111234.ttf"
   },
   {
+    "revision": "8283b204c5c47f3464a6fef4904a9ebd",
+    "url": "/dgtek-land-1/img/family-3.8283b204.jpg"
+  },
+  {
     "revision": "cba76bc5ec80591e5d9a55306c1ad32a",
     "url": "/dgtek-land-1/img/globe.cba76bc5.svg"
   },
@@ -96,12 +100,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dgtek-land-1/img/speed.c9a0c7cf.svg"
   },
   {
-    "revision": "8d2b8ff13ab03191e69bac44138d4acc",
+    "revision": "3d1540731448ab8bd38a3754a9c8b95e",
     "url": "/dgtek-land-1/index.html"
   },
   {
-    "revision": "e301f8258e0c7fa788d0",
-    "url": "/dgtek-land-1/js/app.6458fb2d.js"
+    "revision": "8c25a7bc546821a02784",
+    "url": "/dgtek-land-1/js/app.5ec89db3.js"
   },
   {
     "revision": "57b024c2808f28a7e7a7",
