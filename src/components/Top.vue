@@ -1,39 +1,49 @@
 <template>
-<v-container fluid style="overflow-x: hidden; margin-top: 40px; margin-bottom: 64px;">
-  <v-card flat class="mx-auto homefone" width="100%" max-width="1440">
-    <v-row align="center" justify="center">
-      <v-col cols="12" md="6" class="text-center mx-auto">
-        <v-card flat width="100%" max-width="500" class="transparent mx-auto">
-          <v-card-text class="text-center text-md-left">
-            <h1 class="text-center text-md-left">{{ top.header }}</h1>
-          </v-card-text>
-          <v-card-text class="mx-auto mx-lg-0">
-            <p class="text-center text-md-left">
-              {{ top.text }}
-            </p>
-          </v-card-text>
-          <!-- <v-card-text class="text-center text-md-left">
-            <v-btn
-                color="buttons"
-                dark
-                rounded
-                height="48"
-                class="submit-button px-auto mx-auto"
-                @click="$emit('update:page', 'contact')"
-            >
-                {{ top.button }}
-            </v-btn>
-          </v-card-text> -->
-        </v-card>
-      </v-col>
-      <v-col sm="12" md="6">
-          <v-card flat width="100%" max-width="600" class="transparent">
-            <v-img :src="familyPicture" max-width="750" class="mx-auto"></v-img>
-          </v-card>
-      </v-col>
-    </v-row>
-  </v-card>
-</v-container>
+  <v-container fluid style="overflow-x: hidden; margin-top: 40px; margin-bottom: 64px;">
+    <v-img
+          :src="require('@/assets/pictures/headerPicture/family-3.jpg')"
+          scroll-threshold="500"
+          min-height="300"
+          max-height="500"
+          max-width="1904"
+          class="mx-auto"
+          position="center"
+    >
+      <v-card flat class="transparent mx-auto" width="100%" max-width="1440">
+        <v-row align="center" justify="center">
+          <v-col cols="12" md="6" class="text-center mx-auto">
+            <v-card flat width="100%" max-width="500" class="transparent mx-auto">
+              <v-card-text class="text-center text-md-left">
+                <h1 class="text-center text-md-left">{{ top.header }}</h1>
+              </v-card-text>
+              <v-card-text class="mx-auto mx-lg-0">
+                <p class="text-center text-md-left">
+                  {{ top.text }}
+                </p>
+              </v-card-text>
+              <!-- <v-card-text class="text-center text-md-left">
+                <v-btn
+                    color="buttons"
+                    dark
+                    rounded
+                    height="48"
+                    class="submit-button px-auto mx-auto"
+                    @click="$emit('update:page', 'contact')"
+                >
+                    {{ top.button }}
+                </v-btn>
+              </v-card-text> -->
+            </v-card>
+          </v-col>
+          <v-col sm="12" md="6">
+              <v-card flat width="100%" max-width="600" class="transparent">
+                <v-img :src="familyPicture" max-width="750" class="mx-auto"></v-img>
+              </v-card>
+          </v-col>
+        </v-row>
+      </v-card>
+    </v-img>
+  </v-container>
 </template>
 
 <style scoped>
@@ -43,6 +53,10 @@
 }
 p {
   line-height: 180%!important;
+  color: #000!important;
+  background: #fff7!important;
+  padding: 8px 16px;
+  box-shadow: 0 0 32px #fff9!important;
 }
 @media screen and (max-width: 500px) {
   .top-element {

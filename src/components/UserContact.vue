@@ -125,6 +125,10 @@ export default {
           validationIcon: '',
           validator () { this.error = this.value.length < 2 }
         },
+        phone: {
+          value: '',
+          placeholder: 'Phone'
+        },
         email: {
           value: '',
           placeholder: 'Email*',
@@ -136,33 +140,33 @@ export default {
             this.validationIcon = this.error ? '$invalid' : '$valid'
             this.color = this.error ? '#FF0E00' : '#656565'
           }
-        },
-        address: {
-          value: '',
-          placeholder: 'Address*',
-          error: false,
-          color: '',
-          validationIcon: '',
-          validator () { this.error = this.value.length < 5 }
-        },
-        postcode: {
-          value: '',
-          placeholder: 'Postcode*',
-          error: false,
-          color: '',
-          validationIcon: '',
-          validator () {
-            this.error = !Number(this.value) || Number(this.value) < 3000 || Number(this.value) > 9999
-          }
-        },
-        state: {
-          value: '',
-          placeholder: 'State*',
-          error: false,
-          color: '',
-          validationIcon: '',
-          validator () { this.error = this.value.length < 5 }
         }
+      //   address: {
+      //     value: '',
+      //     placeholder: 'Address*',
+      //     error: false,
+      //     color: '',
+      //     validationIcon: '',
+      //     validator () { this.error = this.value.length < 5 }
+      //   },
+      //   postcode: {
+      //     value: '',
+      //     placeholder: 'Postcode*',
+      //     error: false,
+      //     color: '',
+      //     validationIcon: '',
+      //     validator () {
+      //       this.error = !Number(this.value) || Number(this.value) < 3000 || Number(this.value) > 9999
+      //     }
+      //   },
+      //   state: {
+      //     value: '',
+      //     placeholder: 'State*',
+      //     error: false,
+      //     color: '',
+      //     validationIcon: '',
+      //     validator () { this.error = this.value.length < 5 }
+      //   }
       }
     }
   },

@@ -1,9 +1,11 @@
 <template>
   <v-app light>
     <AppHeader :page="page"/>
-    <v-container fluid class="pa-0 my-0 mx-auto" style="max-width: 1000px">
+    <v-container fluid class="pa-0 my-0" style="max-width: 1904px">
       <Top />
-      <v-row justify="center" class="pa-0 ma-0">
+    </v-container>
+    <v-container fluid class="pa-0 my-0 mx-auto" style="max-width: 1000px">
+      <v-row justify="center" class="pa-0 mx-0">
         <v-sheet
           width="100%"
           color="homefone"

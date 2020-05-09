@@ -1,31 +1,31 @@
 <template>
-        <v-card
-              flat
-              class="aside-card transparent mx-3"
-              max-width="500"
-        >
-          <v-card-title>
-            <h2>{{ aside.header }}</h2>
-          </v-card-title>
-          <v-card-text>
-            <p>
-              {{ aside.text }}
-            </p>
-          </v-card-text>
-          <v-card-text>
-            <!-- <p style="margin-left: 0!important"><b>Exactly what’s on offer:</b></p> -->
-            <h5>{{ aside.offer[0].blackText }} <span class="red--text">{{ aside.offer[0].redText }}</span></h5>
-            <h5>{{ aside.offer[1].blackText }} <span class="red--text">{{ aside.offer[1].redText }}</span></h5>
-          </v-card-text>
-          <v-card-text>
-            <p class="small">
-              {{ aside.smallText[0] }}
-            </p>
-            <p class="small">
-              {{ aside.smallText[1] }}
-            </p>
-          </v-card-text>
-        </v-card>
+  <v-card
+        flat
+        class="aside-card transparent mx-3"
+        max-width="500"
+  >
+    <v-card-title>
+      <h2>{{ aside.header }}</h2>
+    </v-card-title>
+    <v-card-text>
+      <p>
+        {{ aside.text }}
+      </p>
+    </v-card-text>
+    <v-card-text>
+      <!-- <p style="margin-left: 0!important"><b>Exactly what’s on offer:</b></p> -->
+      <h5>{{ aside.offer[0].blackText }} <span class="red--text">{{ aside.offer[0].redText }}</span></h5>
+      <h5>{{ aside.offer[1].blackText }} <span class="red--text">{{ aside.offer[1].redText }}</span></h5>
+    </v-card-text>
+    <v-card-text>
+      <p class="small">
+        {{ aside.smallText[0] }}
+      </p>
+      <p class="small">
+        {{ aside.smallText[1] }}
+      </p>
+    </v-card-text>
+  </v-card>
 </template>
 
 <style scoped>
@@ -59,7 +59,7 @@ p {
 }
 @media screen and (max-width: 600px) {
   .aside-card {
-    margin-top: -90px;
+    margin-top: -50px;
     margin-bottom: 80px;
   }
 }
