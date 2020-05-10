@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dgtek-land-1/browserconfig.xml"
   },
   {
-    "revision": "db67b26a857329c0e45b",
-    "url": "/dgtek-land-1/css/app.1d5a1b7f.css"
+    "revision": "5b6c8c559e3ac4758dd6",
+    "url": "/dgtek-land-1/css/app.fe807789.css"
   },
   {
     "revision": "34d360f61eeb45d28c5d",
@@ -92,8 +92,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dgtek-land-1/img/logo.ada5061d.png"
   },
   {
-    "revision": "54759fbf60e33612e5aafeb3a165b3a8",
-    "url": "/dgtek-land-1/img/map-picture.54759fbf.svg"
+    "revision": "5147c68b30b8b0beabbf6eb897e5d458",
+    "url": "/dgtek-land-1/img/pointed-shape.5147c68b.svg"
   },
   {
     "revision": "365f2efda4e4d916f2e8cfd94a0cd057",
@@ -104,12 +104,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dgtek-land-1/img/speed.c9a0c7cf.svg"
   },
   {
-    "revision": "10b5f8f66512380cd3237502134c0139",
+    "revision": "53ed5f049a9b0a0a4ed3a14f24913bbd",
     "url": "/dgtek-land-1/index.html"
   },
   {
-    "revision": "db67b26a857329c0e45b",
-    "url": "/dgtek-land-1/js/app.0d176412.js"
+    "revision": "5b6c8c559e3ac4758dd6",
+    "url": "/dgtek-land-1/js/app.82976a59.js"
   },
   {
     "revision": "34d360f61eeb45d28c5d",
