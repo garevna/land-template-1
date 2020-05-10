@@ -7,7 +7,7 @@
           v-model="panel"
           class="app-bar d-lg-none"
           width="100%"
-          style="position: fixed; margin-top: -8px; z-index: 10;"
+          style="position: fixed; margin-top: -12px; margin-left: -12px; z-index: 10"
   >
     <v-expansion-panel style="background: #FAFAFA">
       <v-expansion-panel-header
@@ -50,13 +50,6 @@
             <v-img src="@/assets/logo.png" contain width="150" height="45"></v-img>
           </span>
           <v-spacer></v-spacer>
-      <!-- <v-btn-toggle
-            group
-            flat
-            class="mr-10 d-none d-lg-flex"
-            color="transparent"
-            v-model="toggle"
-      > -->
         <a
                v-for="(page, index) in pages"
                :key="index"
@@ -67,7 +60,6 @@
                @click="action($event.target)">
               {{ page }}
         </a>
-      <!-- </v-btn-toggle> -->
     </v-row>
   </v-app-bar>
 </v-container>

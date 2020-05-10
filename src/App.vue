@@ -5,38 +5,20 @@
       <Top />
     </v-container>
     <v-container fluid class="pa-0 my-0 mx-auto" style="max-width: 1000px">
-      <v-row justify="center" class="pa-0 mx-0">
-        <v-sheet
-          width="100%"
-          color="homefone"
-          tile
-          class="mx-auto"
-        >
-          <v-row class="mx-0 px-0">
-            <v-col cols="12" md="6" class="aside-col">
-              <v-card
-                      flat
-                      class="aside-card transparent"
-              >
-                <Aside />
-              </v-card>
-            </v-col>
-            <v-col cols="12" md="6" class="mx-0 px-0">
-              <v-card flat class="transparent mx-0">
-                <v-img src="@/img/map-picture.svg" height="800" contain style="opacity:0.2;"></v-img>
-                <v-card
-                        :width="viewport.width > 600 ? 450 : 340"
-                        flat
-                        class="user-contact transparent mx-auto pa-0"
-                        style="margin-bottom: 120px"
-                >
-                  <UserContact/>
-                </v-card>
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-sheet>
+      <v-row class="mx-0 px-0 my-12" align="center" justify="space-between">
+        <v-col cols="12" md="6">
+          <Aside />
+        </v-col>
+        <v-col cols="12" md="6" class="mx-0 px-0">
+          <section id="contact" class="mx-auto">
+            <div class="base-title">
+              <a href="#contact" class="core-goto"></a>
+                <UserContact />
+            </div>
+          </section>
+        </v-col>
       </v-row>
+
       <v-row class="mx-0 px-0">
         <Benefits />
       </v-row>
@@ -76,8 +58,8 @@ body {
   background: #FBFBFB!important;
 }
 
-.user-contact {
-  margin-top: -720px;
+.container {
+  padding: 0!important;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -132,94 +114,19 @@ p {
   word-break: normal!important;
 }
 
-</style>
-
-<style scoped>
-
-@media screen and (max-width: 900px) {
-  h1, h4 { text-align: center; }
-  .header-card {
-    margin-left: 0!important;
-    margin-top: 90px;
-    width: 100%;
-  }
-  .picture {
-    width: 50%;
-    right: 25%;
-    top: -100px;
-  }
-}
-@media screen and (max-width: 599px) {
-  h1, h4 { text-align: center; }
-  .header-card {
-    margin-left: 0!important;
-    margin-top: 100px;
-    width: 100%;
-  }
-  .picture {
-    width: 80%;
-    right: 10%;
-    top: -100px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  h1, h4 { width: 100%; text-align: center; }
-  .header-card {
-    margin-left: 0px;
-    margin-top: 130px;
-  }
-  .picture {
-    width: 80%;
-    right: 10%;
-    top: -50px;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #FF0E00;
+  background: #83332C;
 }
 ::-webkit-scrollbar-thumb {
-  background: #E5E5E5;
+  background: #E15240;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #72BF44;
+  background: #E5E5E5;
 }
 
-@media screen and (max-width: 600px) {
-  .user-contact {
-    margin-top: -900px;
-  }
-  .aside-col {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .aside-card {
-    width: 100%;
-    margin-left: -10px;
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .user-contact {
-    margin-top: -900px;
-  }
-  .aside-col {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .aside-card {
-    width: 100%;
-    margin-left: -10px;
-    padding: 0;
-  }
-}
 </style>
 
 <script>
@@ -237,7 +144,7 @@ import Footer from '@/components/Footer.vue'
 export default {
   name: 'App',
   created () {
-    document.title = '...'
+    document.title = 'DGtek'
   },
   components: {
     AppHeader,
@@ -258,11 +165,6 @@ export default {
         width: window.innerWidth,
         height: window.innerHeight
       }
-    }
-  },
-  computed: {
-    headerHeight () {
-      return this.viewport.width >= 1440 ? 810 : 770
     }
   },
   watch: {

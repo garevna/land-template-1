@@ -6,6 +6,7 @@ const state = {
   textForUserMail: 'Thank you for your interest in DGtek. A member of our team will be in touch shortly.',
   top: {
     header: '[Top Header]',
+    image: '',
     text: '[Some text... Some text... Some text... Some text... Some text... Some text... Some text... Some text... Some text... Some text... Some text... Some text... Some text...]',
     button: '[Header Button]'
   },

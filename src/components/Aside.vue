@@ -1,7 +1,7 @@
 <template>
   <v-card
         flat
-        class="aside-card transparent mx-3"
+        class="transparent mx-0"
         max-width="500"
   >
     <v-card-title>
@@ -30,10 +30,6 @@
 
 <style scoped>
 
-.aside-card {
-  padding-top: 150px;
-}
-
 h2 {
   color: #1A1A1A;
   letter-spacing: 0.1rem;
@@ -49,19 +45,6 @@ p {
 }
 .small {
   font-size: 14px;
-}
-
-@media screen and (max-width: 900px) {
-  .aside-card {
-    margin-top: -180px;
-    margin-bottom: 80px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .aside-card {
-    margin-top: -50px;
-    margin-bottom: 80px;
-  }
 }
 
 </style>

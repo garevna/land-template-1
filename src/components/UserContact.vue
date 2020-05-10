@@ -1,41 +1,50 @@
 <template>
-  <v-card class="user-info mx-auto pa-6">
-    <v-card-title>
-      <h4>{{ userForm.title }}</h4>
-    </v-card-title>
-    <v-card-text class="mx-0 px-0" width="100%">
-      <v-text-field
-            v-for="(item, prop) in items"
-            :key="prop"
-            :placeholder="item.placeholder"
-            outlined
-            :color="item.color"
-            v-model="item.value"
-            class="user-inputs"
-            :error="item.error"
-            :append-icon="item.validationIcon"
-            @input="validate(item)"
-      ></v-text-field>
-      <v-textarea
-            :placeholder="userForm.messagePlaceholder"
-            outlined
-            color="#656565"
-            auto-grow
-            v-model="message"
-            class="user-inputs"
-      ></v-textarea>
-    </v-card-text>
-    <v-card-actions class="text-center">
-      <v-btn
-          dark
-          width="100%"
-          height="65"
-          color="buttons"
-          class="submit-button"
-          @click="sendUserRequest"
-      >{{ userForm.button }}</v-btn>
-    </v-card-actions>
-    <Popup :opened.sync="popupOpened" />
+  <v-card flat class="transparent mx-auto" max-width="450" style="position: relative">
+    <v-img
+          v-if="viewportWidth > 960"
+          src="@/assets/pictures/pointed-shape.svg"
+          contain
+          style="position: absolute; top: -40px; left: -40px;"
+    ></v-img>
+      <v-card class="user-info mx-auto py-4 px-6" max-width="450">
+        <v-card-title>
+          <h4>{{ userForm.title }}</h4>
+        </v-card-title>
+        <v-card-text class="mx-0 px-0" width="100%">
+          <v-text-field
+                v-for="(item, prop) in items"
+                :key="prop"
+                :placeholder="item.placeholder"
+                outlined
+                :color="item.color"
+                v-model="item.value"
+                class="user-inputs"
+                :error="item.error"
+                :append-icon="item.validationIcon"
+                @input="validate(item)"
+          ></v-text-field>
+          <v-textarea
+                :placeholder="userForm.messagePlaceholder"
+                outlined
+                color="#656565"
+                auto-grow
+                v-model="message"
+                class="user-inputs"
+          ></v-textarea>
+        </v-card-text>
+        <v-card-actions class="text-center">
+          <v-btn
+              dark
+              width="100%"
+              height="65"
+              color="buttons"
+              class="submit-button"
+              @click="sendUserRequest"
+          >{{ userForm.button }}</v-btn>
+        </v-card-actions>
+        <Popup :opened.sync="popupOpened" />
+      </v-card>
+
   </v-card>
 </template>
 
@@ -125,10 +134,6 @@ export default {
           validationIcon: '',
           validator () { this.error = this.value.length < 2 }
         },
-        phone: {
-          value: '',
-          placeholder: 'Phone'
-        },
         email: {
           value: '',
           placeholder: 'Email*',
@@ -140,37 +145,38 @@ export default {
             this.validationIcon = this.error ? '$invalid' : '$valid'
             this.color = this.error ? '#FF0E00' : '#656565'
           }
+        },
+        address: {
+          value: '',
+          placeholder: 'Address*',
+          error: false,
+          color: '',
+          validationIcon: '',
+          validator () { this.error = this.value.length < 5 }
+        },
+        postcode: {
+          value: '',
+          placeholder: 'Postcode*',
+          error: false,
+          color: '',
+          validationIcon: '',
+          validator () {
+            this.error = !Number(this.value) || Number(this.value) < 3000 || Number(this.value) > 9999
+          }
+        },
+        state: {
+          value: '',
+          placeholder: 'State*',
+          error: false,
+          color: '',
+          validationIcon: '',
+          validator () { this.error = this.value.length < 5 }
         }
-      //   address: {
-      //     value: '',
-      //     placeholder: 'Address*',
-      //     error: false,
-      //     color: '',
-      //     validationIcon: '',
-      //     validator () { this.error = this.value.length < 5 }
-      //   },
-      //   postcode: {
-      //     value: '',
-      //     placeholder: 'Postcode*',
-      //     error: false,
-      //     color: '',
-      //     validationIcon: '',
-      //     validator () {
-      //       this.error = !Number(this.value) || Number(this.value) < 3000 || Number(this.value) > 9999
-      //     }
-      //   },
-      //   state: {
-      //     value: '',
-      //     placeholder: 'State*',
-      //     error: false,
-      //     color: '',
-      //     validationIcon: '',
-      //     validator () { this.error = this.value.length < 5 }
-      //   }
       }
     }
   },
   computed: {
+    ...mapState(['viewportWidth']),
     ...mapState('content', ['userForm', 'subject', 'textForUserMail'])
   },
   methods: {
